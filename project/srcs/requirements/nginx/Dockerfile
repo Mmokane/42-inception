@@ -1,8 +1,8 @@
-FROM nginx:1-perl
+FROM alpine:3.18
 
-COPY tools/ /usr/share/nginx/html
+RUN apk update && apk upgrade && apk add --no-cashe nginx
 
-EXPOSE  80
+EXPOSE 443
 
-CMD ["nginx" ,"-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
 
