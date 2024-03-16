@@ -3,7 +3,15 @@ FROM debian:bullseye
 RUN apt-get update -y && apt-get upgrade -y \
     && apt-get install -y nginx
 
-RUN rm -rf /usr/share/nginx/html/*
-COPY /tools /usr/share/nginx/html/
+RUN mkdir -p /etc/nginx/ssl/
+
+
+COPY index.html /var/www/html/
+
+COPY /tools/ /etc/nginx/ssl/
+
+COPY conf/nginx.conf /etc/nginx/conf.d
+
+EXPOSE 443
 
 CMD ["nginx", "-g", "daemon off;"]
