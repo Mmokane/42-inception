@@ -6,7 +6,7 @@ RUN apt-get update -y && apt-get upgrade -y \
 RUN mkdir -p /etc/nginx/ssl/
 
 
-COPY index.html /var/www/html/
+# COPY index.html /var/www/html/
 
 COPY /tools/ /etc/nginx/ssl/
 
