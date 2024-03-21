@@ -10,3 +10,5 @@ mariadb -e "FLUSH PRIVILEGES;"
 service mariadb stop
 
 mysqld_safe
+
+#take off the mysqld_safe and check for the diff

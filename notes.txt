@@ -1,0 +1,8 @@
+Mariad db :
+# mariad db is a relational database , that provides stabitlity 
+# and its compatible with SQL 
+--- relational database is a way of organizing data in a structed 
+	format, using tables with rows and columns, rows contain individual
+	recods, and columns define the attributes .
+
+d
