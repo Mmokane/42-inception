@@ -5,4 +5,3 @@ Mariad db :
 	format, using tables with rows and columns, rows contain individual
 	recods, and columns define the attributes .
 
-d
